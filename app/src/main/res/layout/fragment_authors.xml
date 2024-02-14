@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".features.AuthorsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/spacing_m_large"
+        android:src="@drawable/bsem_allah_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:tint="@color/yallow" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/style_text_authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/Committee_members"
+        android:textColor="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="@string/Author_Name_1"
+            android:textColor="@color/black"
+            />
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Author_Name_2"
+            android:textColor="@color/black"
+            />
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Author_Name_3"
+            android:textColor="@color/black"
+            />
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Author_Name_4"
+            android:textColor="@color/black"
+            />
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Author_Name_5"
+            android:textColor="@color/black"
+            />
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Author_Name_6"
+            android:textColor="@color/black"
+            />
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Author_Name_7"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/spacing_xxx_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="@string/Define_him"
+            android:textColor="@color/primary_color" />
+
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Define_him_name_1"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/style_text_Define_him"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Description_of_Define_him_1"
+
+            />
+
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Define_him_name_2"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/style_text_Define_him"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Description_of_Define_him_2"
+
+            />
+
+        <TextView
+            style="@style/style_text_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Define_him_name_3"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/style_text_Define_him"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            android:text="@string/Description_of_Define_him_3" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_xxx_large"
+        android:background="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ButtonBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/spacing_m_large"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorAccent">
+
+        </ImageView>
+
+        <TextView
+            style="@style/Title_text_ToolBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Authors"
+            app:layout_constraintBottom_toBottomOf="@+id/ButtonBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ButtonBack" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

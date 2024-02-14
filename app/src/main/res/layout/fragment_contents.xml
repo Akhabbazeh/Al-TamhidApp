@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".features.OurServicesFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_xxx_large"
+        android:background="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ButtonBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/spacing_m_large"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorAccent">
+
+        </ImageView>
+
+        <TextView
+            style="@style/Title_text_ToolBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Contents"
+            android:layout_marginEnd="@dimen/spacing_large"
+            app:layout_constraintBottom_toBottomOf="@+id/ButtonBack"
+            app:layout_constraintEnd_toStartOf="@+id/ButtonBack"
+            app:layout_constraintTop_toTopOf="@+id/ButtonBack">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <FrameLayout
+    android:id="@+id/space_1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spacing_x_medium"
+    android:background="@color/colorAccent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_medium"
+        tools:listitem="@layout/item_list_container_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space_1"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

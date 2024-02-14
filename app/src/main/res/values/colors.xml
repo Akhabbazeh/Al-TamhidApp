@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#006837</color>
+    <color name="colorAccent">#cdab40</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="backgroundColor">#f9f8f4</color>
+    <color name="titlePageColor">#bf3336</color>
+    <color name="backgroundNav">#EEEEEE</color>
+
+
+    Al-tamhidColors---->
+    <color name="red">#ed1e24</color>
+    <color name="red_200">#FF6868</color>
+
+    <color name="primaryColor">#0f8660</color>
+    <color name="yallow">#cdab40</color>
+
+
+
+</resources>

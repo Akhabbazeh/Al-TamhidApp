@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--general spacing-->
+    <dimen name="spacing_x_small">@dimen/_2sdp</dimen>
+    <dimen name="spacing_medium">@dimen/_5sdp</dimen>
+    <dimen name="spacing_x_medium">@dimen/_7sdp</dimen>
+    <dimen name="spacing_middle">@dimen/_10sdp</dimen>
+    <dimen name="spacing_large">@dimen/_15sdp</dimen>
+    <dimen name="spacing_m_large">@dimen/_20sdp</dimen>
+    <dimen name="spacing_x_large">@dimen/_35sdp</dimen>
+    <dimen name="spacing_xxx_large">@dimen/_55sdp</dimen>
+
+
+</resources>

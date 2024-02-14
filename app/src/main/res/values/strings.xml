@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">التمهيد لتلاوة الكتاب المجيد</string>
+    <string name="Contents">فهرس الموضوعات</string>
+    <string name="this_book">هذا الكتاب</string>
+    <string name="Authors">المؤلفون</string>
+    Committee members
+    <string name="users_Guide">دليل المستخدم</string>
+    <string name="Our_services">خدماتنا</string>
+    <string name="For_your_comments">لملاحظاتكم</string>
+
+
+    <string name="Committee_members">أعضاء لجنة التأليف:</string>
+    <string name="Author_Name_1">د.عبد الله بوشي (مشرفاً)</string>
+    <string name="Author_Name_2">أ.أحمد فارس</string>
+    <string name="Author_Name_3">أ.عبد القادر بادنجكي</string>
+    <string name="Author_Name_4">أ.محمد عبد المنعم بادنجكي</string>
+    <string name="Author_Name_5">أ.محمد كحاط</string>
+    <string name="Author_Name_6">أ.يحيى دبلوني</string>
+    <string name="Author_Name_7">أ.يوسف سويد</string>
+
+    <string name="Define_him">قدّم له:</string>
+    <string name="Define_him_name_1">الشّيخ محمّد نادر خيّاطة</string>
+    <string name="Description_of_Define_him_1">مجاز في القراءات العشر.</string>
+    <string name="Define_him_name_2">الشّيخ د. محمود زعتري</string>
+    <string name="Description_of_Define_him_2">دكتوراه في القراءات ومجاز في القراءات العشر.</string>
+    <string name="Define_him_name_3">الشّيخ عمّار مصطفى بازرباشي</string>
+    <string name="Description_of_Define_him_3">ماجستير في الشريعة الإسلامية ومجاز في القراءات العشر.</string>
+
+    <string name="this_book_1">
+بابٌ يدخل منه فِلذةُ أكبادِنا إلى عالم القرآن الكريم، ليتفيّؤُوا ظِلالَهُ الوافِرَةَ ويُرتّلوا آياته العظيمة، ويتلونه حقّ تلاوته.
+		 \n
+         \n
+أسلوبه ميسّر ومبسّط، حيث أنه يحوي في طيّاته تدريباتٍ عمليّةً، وأمثلةٍ عديدةٍ، ليُصبح الطالب بعد هذه الدُربَةِ العمليّة مطبقاً لأحكام التجويد الأساسية دون تكلُفٍ.
+    </string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
