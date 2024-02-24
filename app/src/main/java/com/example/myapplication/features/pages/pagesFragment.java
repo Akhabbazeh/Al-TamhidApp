@@ -102,8 +102,6 @@ public class pagesFragment extends BaseFragment {
         ViewPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
 
         // add Fragments in your ViewPagerFragmentAdapter class
-        viewPagerAdapter.addFragment(new Page_11());
-        viewPagerAdapter.addFragment(new Page_15());
 //        viewPagerAdapter.addFragment(new Page_1());
 //        viewPagerAdapter.addFragment(new Page_2());
 //        viewPagerAdapter.addFragment(new Page_3());
@@ -114,39 +112,41 @@ public class pagesFragment extends BaseFragment {
 //        viewPagerAdapter.addFragment(new Page_8());
 //        viewPagerAdapter.addFragment(new Page_9());
 //        viewPagerAdapter.addFragment(new Page_10());
-//        viewPagerAdapter.addFragment(new Page_12());
-//        viewPagerAdapter.addFragment(new Page_13());
-//        viewPagerAdapter.addFragment(new Page_14());
-//        viewPagerAdapter.addFragment(new Page_16());
-//        viewPagerAdapter.addFragment(new Page_17());
-//        viewPagerAdapter.addFragment(new Page_18());
-//        viewPagerAdapter.addFragment(new Page_19());
-//        viewPagerAdapter.addFragment(new Page_20());
-//        viewPagerAdapter.addFragment(new Page_21());
-//        viewPagerAdapter.addFragment(new Page_22());
-//        viewPagerAdapter.addFragment(new Page_23());
-//        viewPagerAdapter.addFragment(new Page_24());
-//        viewPagerAdapter.addFragment(new Page_25());
-//        viewPagerAdapter.addFragment(new Page_26());
+        viewPagerAdapter.addFragment(new Page_11());
+        viewPagerAdapter.addFragment(new Page_12());
+        viewPagerAdapter.addFragment(new Page_13());
+        viewPagerAdapter.addFragment(new Page_14());
+        viewPagerAdapter.addFragment(new Page_15());
+        viewPagerAdapter.addFragment(new Page_16());
+        viewPagerAdapter.addFragment(new Page_17());
+        viewPagerAdapter.addFragment(new Page_18());
+        viewPagerAdapter.addFragment(new Page_19());
+        viewPagerAdapter.addFragment(new Page_20());
+        viewPagerAdapter.addFragment(new Page_21());
+        viewPagerAdapter.addFragment(new Page_22());
+        viewPagerAdapter.addFragment(new Page_23());
+        viewPagerAdapter.addFragment(new Page_24());
+        viewPagerAdapter.addFragment(new Page_25());
+        viewPagerAdapter.addFragment(new Page_26());
 //        viewPagerAdapter.addFragment(new Page_27());
 //        viewPagerAdapter.addFragment(new Page_28());
-//        viewPagerAdapter.addFragment(new Page_29());
-//        viewPagerAdapter.addFragment(new Page_30());
-//        viewPagerAdapter.addFragment(new Page_31());
-//        viewPagerAdapter.addFragment(new Page_32());
-//        viewPagerAdapter.addFragment(new Page_33());
-//        viewPagerAdapter.addFragment(new Page_34());
-//        viewPagerAdapter.addFragment(new Page_35());
-//        viewPagerAdapter.addFragment(new Page_36());
-//        viewPagerAdapter.addFragment(new Page_37());
-//        viewPagerAdapter.addFragment(new Page_38());
-//        viewPagerAdapter.addFragment(new Page_39());
-//        viewPagerAdapter.addFragment(new Page_40());
-//        viewPagerAdapter.addFragment(new Page_41());
-//        viewPagerAdapter.addFragment(new Page_42());
-//        viewPagerAdapter.addFragment(new Page_43());
-//        viewPagerAdapter.addFragment(new Page_44());
-//        viewPagerAdapter.addFragment(new Page_45());
+        viewPagerAdapter.addFragment(new Page_29());
+        viewPagerAdapter.addFragment(new Page_30());
+        viewPagerAdapter.addFragment(new Page_31());
+        viewPagerAdapter.addFragment(new Page_32());
+        viewPagerAdapter.addFragment(new Page_33());
+        viewPagerAdapter.addFragment(new Page_34());
+        viewPagerAdapter.addFragment(new Page_35());
+        viewPagerAdapter.addFragment(new Page_36());
+        viewPagerAdapter.addFragment(new Page_37());
+        viewPagerAdapter.addFragment(new Page_38());
+        viewPagerAdapter.addFragment(new Page_39());
+        viewPagerAdapter.addFragment(new Page_40());
+        viewPagerAdapter.addFragment(new Page_41());
+        viewPagerAdapter.addFragment(new Page_42());
+        viewPagerAdapter.addFragment(new Page_43());
+        viewPagerAdapter.addFragment(new Page_44());
+        viewPagerAdapter.addFragment(new Page_45());
         ViewPager.setAdapter(viewPagerAdapter);
         ViewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
@@ -159,9 +159,9 @@ public class pagesFragment extends BaseFragment {
                 super.onPageSelected(position);
                 pageNum = position;
                 if (!(mediaPlayer.isPlaying() && mediaPlayer != null || isPause==true)){
-                    mediaPlayer=Tool.getAudioPage(getContext(),pageNum);
-                    seekBar.setMax(mediaPlayer.getDuration());
-                    txtTitlePage.setText(Tool.getPageTitle(pageNum));
+//                    mediaPlayer=Tool.getAudioPage(getContext(),pageNum);
+//                    seekBar.setMax(mediaPlayer.getDuration());
+//                    txtTitlePage.setText(Tool.getPageTitle(pageNum));
                 }
             }
 

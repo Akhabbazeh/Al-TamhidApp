@@ -49,14 +49,15 @@ public class Tool {
             return MediaPlayer.create(context,R.raw.page_11);
         }else if (position==1){
             return MediaPlayer.create(context,R.raw.page_15);
-        }
-    return null;
+        }else return null;
     }
 
     public static String getPageTitle(int pageNum){
         if (pageNum==0){
             return "الحروف حسب ترتيب مخارجها";
-        }else return "الحروفٌ اللَّثويَّة";
+        }else if (pageNum==0){
+            return "الحروفٌ اللَّثويَّة";
+        }else return "null";
     }
     public static void displayImageDrawable(Context context, ImageView img, @DrawableRes int drawable) {
         try {
