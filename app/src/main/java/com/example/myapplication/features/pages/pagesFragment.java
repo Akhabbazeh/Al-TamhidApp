@@ -101,17 +101,6 @@ public class pagesFragment extends BaseFragment {
         // set Orientation in your ViewPager2
         ViewPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
 
-        // add Fragments in your ViewPagerFragmentAdapter class
-//        viewPagerAdapter.addFragment(new Page_1());
-//        viewPagerAdapter.addFragment(new Page_2());
-//        viewPagerAdapter.addFragment(new Page_3());
-//        viewPagerAdapter.addFragment(new Page_4());
-//        viewPagerAdapter.addFragment(new Page_5());
-//        viewPagerAdapter.addFragment(new Page_6());
-//        viewPagerAdapter.addFragment(new Page_7());
-//        viewPagerAdapter.addFragment(new Page_8());
-//        viewPagerAdapter.addFragment(new Page_9());
-//        viewPagerAdapter.addFragment(new Page_10());
         viewPagerAdapter.addFragment(new Page_11());
         viewPagerAdapter.addFragment(new Page_12());
         viewPagerAdapter.addFragment(new Page_13());
@@ -128,8 +117,6 @@ public class pagesFragment extends BaseFragment {
         viewPagerAdapter.addFragment(new Page_24());
         viewPagerAdapter.addFragment(new Page_25());
         viewPagerAdapter.addFragment(new Page_26());
-//        viewPagerAdapter.addFragment(new Page_27());
-//        viewPagerAdapter.addFragment(new Page_28());
         viewPagerAdapter.addFragment(new Page_29());
         viewPagerAdapter.addFragment(new Page_30());
         viewPagerAdapter.addFragment(new Page_31());
@@ -147,6 +134,15 @@ public class pagesFragment extends BaseFragment {
         viewPagerAdapter.addFragment(new Page_43());
         viewPagerAdapter.addFragment(new Page_44());
         viewPagerAdapter.addFragment(new Page_45());
+        viewPagerAdapter.addFragment(new Page_46());
+        viewPagerAdapter.addFragment(new Page_47());
+        viewPagerAdapter.addFragment(new Page_48());
+        viewPagerAdapter.addFragment(new Page_49());
+        viewPagerAdapter.addFragment(new Page_50());
+        viewPagerAdapter.addFragment(new Page_51());
+        viewPagerAdapter.addFragment(new Page_52());
+        viewPagerAdapter.addFragment(new Page_53());
+
         ViewPager.setAdapter(viewPagerAdapter);
         ViewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
@@ -159,9 +155,9 @@ public class pagesFragment extends BaseFragment {
                 super.onPageSelected(position);
                 pageNum = position;
                 if (!(mediaPlayer.isPlaying() && mediaPlayer != null || isPause==true)){
-//                    mediaPlayer=Tool.getAudioPage(getContext(),pageNum);
-//                    seekBar.setMax(mediaPlayer.getDuration());
-//                    txtTitlePage.setText(Tool.getPageTitle(pageNum));
+                    mediaPlayer=Tool.getAudioPage(getContext(),pageNum);
+                    seekBar.setMax(mediaPlayer.getDuration());
+                    txtTitlePage.setText(Tool.getPageTitle(pageNum));
                 }
             }
 
