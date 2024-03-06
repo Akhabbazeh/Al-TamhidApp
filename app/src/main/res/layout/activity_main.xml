@@ -14,39 +14,9 @@
     <FrameLayout
         android:id="@+id/FrameLayout_main_activity"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:background="@color/primary_color">
     </FrameLayout>
 
-    <LinearLayout
-        android:id="@+id/textCounterLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/backgroundNav"
-        android:layout_marginHorizontal="@dimen/spacing_middle"
-        android:layout_marginVertical="@dimen/spacing_x_small"
-        android:visibility="gone"
-        >
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
-        <TextView
-            android:id="@+id/textCounterNum"
-            android:textColor="@color/red"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_12ssp"
-            android:layout_marginEnd="@dimen/_15sdp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="عدد مرات التكرار المتبقية: "
-            android:textSize="@dimen/_12ssp"/>
-
-    </LinearLayout>
 
 </LinearLayout>

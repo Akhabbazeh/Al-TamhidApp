@@ -24,16 +24,12 @@ public class MainActivity extends AppCompatActivity implements PageInterface  {
     private MediaPlayer music;
     private boolean isPlayer=false;
     private boolean isPause=false;
-    private LinearLayout textCounterLayout;
-    private TextView textCounterNum;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textCounterLayout=findViewById(R.id.textCounterLayout);
-        textCounterNum= findViewById(R.id.textCounterNum);
         setFragment(new StartFragment());
 
 

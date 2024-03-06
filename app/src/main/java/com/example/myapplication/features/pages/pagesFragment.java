@@ -49,6 +49,7 @@ public class pagesFragment extends BaseFragment {
     private int counterNum_new=0;
     private boolean counterIsEmpty=true;
     private int counterIsplay =2;
+    private int position=0;
 
 
     public pagesFragment() {
@@ -65,6 +66,8 @@ public class pagesFragment extends BaseFragment {
                     + " must implement FragmentToActivity");
         }
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -87,6 +90,19 @@ public class pagesFragment extends BaseFragment {
         txt_counter = view_2.findViewById(R.id.txt_counter);
         btn_add_counter = view_2.findViewById(R.id.btn_add_counter);
         btn_remove_counter = view_2.findViewById(R.id.btn_remove_counter);
+
+
+
+
+        Bundle bundle = getArguments();
+        if(bundle != null)
+        {
+            position = bundle.getInt("Position",0);
+        }
+        else
+        {
+            position = 0;
+        }
 
 
         initComponent();
@@ -144,6 +160,10 @@ public class pagesFragment extends BaseFragment {
         viewPagerAdapter.addFragment(new Page_53());
 
         ViewPager.setAdapter(viewPagerAdapter);
+        ViewPager.setCurrentItem(position);
+        mediaPlayer=Tool.getAudioPage(getContext(),position);
+        seekBar.setMax(mediaPlayer.getDuration());
+        txtTitlePage.setText(Tool.getPageTitle(position));
         ViewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -364,4 +384,10 @@ public class pagesFragment extends BaseFragment {
         }
     }
 
+    @Override
+    public void onPause() {
+        pauseAudio();
+        super.onPause();
+
     }
+}

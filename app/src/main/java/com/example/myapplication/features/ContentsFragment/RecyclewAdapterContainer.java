@@ -1,7 +1,10 @@
 package com.example.myapplication.features.ContentsFragment;
 
 
+import static android.app.PendingIntent.getActivity;
+
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,86 +57,83 @@ class RecyclewAdapterContainer extends RecyclerView.Adapter<RecyclewAdapterConta
                 {
                     case 0 :
                     {
-                        fragmentManager.beginTransaction()
-                                .replace(R.id.FrameLayout_main_activity, new pagesFragment(),"ThisBookFragment")
-                                .addToBackStack("ThisBookFragment")
-                                .commit();
+                       sendPageNumber(0);
                     }
                         break; // break is optional
                     case 1 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 15", Toast.LENGTH_LONG).show();
+                        sendPageNumber(4);
                     }
                     break;
                     case 2 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 16", Toast.LENGTH_LONG).show();
+                        sendPageNumber(5);
 
                     }
                     break;
                     case 3 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 18", Toast.LENGTH_LONG).show();
+                        sendPageNumber(7);
 
                     }
                     break;
                     case 4 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 19", Toast.LENGTH_LONG).show();
+                        sendPageNumber(8);
 
                     }
                     break;
                     case 5 :
                 {
-                    Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 21", Toast.LENGTH_LONG).show();
+                    sendPageNumber(10);
 
                 }
                 break;
                     case 6 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 29", Toast.LENGTH_LONG).show();
+                        sendPageNumber(18);
 
                     }
                     break;
                     case 7 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 31", Toast.LENGTH_LONG).show();
+                        sendPageNumber(20);
 
                     }
                     break;
                     case 8 :
                 {
-                    Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 35", Toast.LENGTH_LONG).show();
+                    sendPageNumber(24);
 
                 }
                 break;
                     case 9 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 41", Toast.LENGTH_LONG).show();
+                        sendPageNumber(28);
 
                     }
                     break;
                     case 10 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 44", Toast.LENGTH_LONG).show();
+                        sendPageNumber(31);
 
                     }
                     break;
                     case 11 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 47", Toast.LENGTH_LONG).show();
+                        sendPageNumber(37);
 
                     }
                     break;
                     case 12 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة50", Toast.LENGTH_LONG).show();
+                        sendPageNumber(39);
 
                     }
                     break;
                     case 13 :
                     {
-                        Toast.makeText(context, "عند الضغط على هذا الزر سيتم الانتقال للصفحة 51", Toast.LENGTH_LONG).show();
+                        sendPageNumber(41);
 
                     }
                     break;
@@ -170,6 +170,26 @@ class RecyclewAdapterContainer extends RecyclerView.Adapter<RecyclewAdapterConta
 
 
         }
-}}
+
+
+}
+
+     private void sendPageNumber(int position){
+         pagesFragment pagesFragment = new pagesFragment();
+
+         Bundle bundle = new Bundle();
+         bundle.putInt("Position", position);
+
+         pagesFragment.setArguments(bundle);
+
+         fragmentManager.beginTransaction()
+                 .replace(R.id.FrameLayout_main_activity, pagesFragment, "pagesFragment")
+                 .addToBackStack("pagesFragment")
+                 .commit();
+
+
+     }
+
+}
 
 
